@@ -1,7 +1,7 @@
-From 5ac4777905612cbc845693d2d6f4d4ba216c0f61 Mon Sep 17 00:00:00 2001
+From 25e7d0a49b8e65f8db49b6042c47d30a5c33407b Mon Sep 17 00:00:00 2001
 From: Shyam Sundar S K <Shyam-sundar.S-k@amd.com>
 Date: Sun, 11 Oct 2026 00:35:43 +0530
-Subject: [PATCH 003/252] [FROM-ML] platform/x86/amd/wmi: aod: Document the WMI
+Subject: [PATCH 003/208] [FROM-ML] platform/x86/amd/wmi: aod: Document the WMI
  interface
 
 Describe the AMD Overclocking WMI interface, the commands used for the
@@ -312,10 +312,10 @@ index 000000000000..c75a8d11d8c9
 +  Reads the status reported by the firmware for the last command executed
 +  using ``run_command``.
 diff --git a/MAINTAINERS b/MAINTAINERS
-index f9ab7a3c35ff..5e45df6c4141 100644
+index 2ef91ff102b9..fed7e4fde6f5 100644
 --- a/MAINTAINERS
 +++ b/MAINTAINERS
-@@ -1316,6 +1316,7 @@ M:	Shyam Sundar S K <Shyam-sundar.S-k@amd.com>
+@@ -1340,6 +1340,7 @@ M:	Shyam Sundar S K <Shyam-sundar.S-k@amd.com>
  L:	platform-driver-x86@vger.kernel.org
  S:	Supported
  F:	Documentation/ABI/testing/sysfs-platform-amd-wmi-aod

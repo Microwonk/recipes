@@ -1,7 +1,7 @@
-From 6fd7169de483f80841a02bf057d07b5d3ba2597e Mon Sep 17 00:00:00 2001
+From 1b0cac4a9ea1cb24567ca6e6e7fad11c893aa158 Mon Sep 17 00:00:00 2001
 From: Shyam Sundar S K <Shyam-sundar.S-k@amd.com>
 Date: Sun, 11 Oct 2026 00:35:41 +0530
-Subject: [PATCH 001/252] [FROM-ML] platform/x86/amd/wmi: Add AMD Overclocking
+Subject: [PATCH 001/208] [FROM-ML] platform/x86/amd/wmi: Add AMD Overclocking
  (AOD) WMI driver
 
 AMD Ryzen platforms implement the AMD Overclocking (AOD) interface in the
@@ -149,10 +149,10 @@ index 000000000000..1f7bb5b87434
 +		reboot. Depending on the platform, enabling SMT again may
 +		need a power cycle instead of a reboot.
 diff --git a/MAINTAINERS b/MAINTAINERS
-index 95cd976a068c..f9ab7a3c35ff 100644
+index 782389bd5cd3..2ef91ff102b9 100644
 --- a/MAINTAINERS
 +++ b/MAINTAINERS
-@@ -1311,6 +1311,13 @@ F:	drivers/spi/spi-amd-pci.c
+@@ -1335,6 +1335,13 @@ F:	drivers/spi/spi-amd-pci.c
  F:	drivers/spi/spi-amd.c
  F:	drivers/spi/spi-amd.h
  
@@ -167,7 +167,7 @@ index 95cd976a068c..f9ab7a3c35ff 100644
  M:	Min Ma <mamin506@gmail.com>
  M:	Lizhi Hou <lizhi.hou@amd.com>
 diff --git a/drivers/platform/x86/amd/Kconfig b/drivers/platform/x86/amd/Kconfig
-index b813f9265368..4d19f7d65467 100644
+index a1a74ef6c859..8f51901f98ca 100644
 --- a/drivers/platform/x86/amd/Kconfig
 +++ b/drivers/platform/x86/amd/Kconfig
 @@ -7,6 +7,7 @@ source "drivers/platform/x86/amd/hsmp/Kconfig"
@@ -179,11 +179,11 @@ index b813f9265368..4d19f7d65467 100644
  config AMD_3D_VCACHE
  	tristate "AMD 3D V-Cache Performance Optimizer Driver"
 diff --git a/drivers/platform/x86/amd/Makefile b/drivers/platform/x86/amd/Makefile
-index f6ff0c837f34..42c9991527e3 100644
+index 2f467dbbfc8a..a3415f83cf03 100644
 --- a/drivers/platform/x86/amd/Makefile
 +++ b/drivers/platform/x86/amd/Makefile
-@@ -12,3 +12,4 @@ obj-$(CONFIG_AMD_PMF)		+= pmf/
- obj-$(CONFIG_AMD_WBRF)		+= wbrf.o
+@@ -13,3 +13,4 @@ obj-$(CONFIG_AMD_WBRF)		+= wbrf.o
+ obj-$(CONFIG_AMD_HALO_LED)	+= amd_halo_led.o
  obj-$(CONFIG_AMD_ISP_PLATFORM)	+= amd_isp4.o
  obj-$(CONFIG_AMD_HFI)		+= hfi/
 +obj-y				+= wmi/

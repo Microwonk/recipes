@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : linux-gaming
-version     : "7.2.15"
-release     : 49
+version     : "7.3.1"
+release     : 50
 homepage    : https://kernel.org/
 upstreams   :
-        - https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.15.tar.xz : d0f6b1d7324c937ccaeb5c4ca7084bfcf71db2edb3e2d3a31f0ad83a681809ab
+        - https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.1.tar.xz : fa595aad93734f829c963c2a90ef7c3673224fd7fdae7b49406e397cde2de231
 summary     : The Linux Kernel for handheld systems
 description : |
     The Linux Kernel for gaming systems
